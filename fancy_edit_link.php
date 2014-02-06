@@ -26,5 +26,5 @@
 add_action('init','fancy_edit_link_init');
 
 function fancy_edit_link_init() {
-    wp_enqueue_script( 'fancy-edit-link-js', plugins_url( '/js/fancy_edit_link_.js', __FILE__ ));
+    wp_enqueue_script( 'fancy-edit-link-js', plugins_url( '/js/fancy_edit_link_.js', __FILE__ ),array('jquery'));
 }
